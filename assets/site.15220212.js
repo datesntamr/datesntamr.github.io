@@ -276,7 +276,7 @@
   function withTimeout(p, ms) {
     return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error("timeout")); }, ms); })]);
   }
-  var local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  var local = /^(localhost|127\.0\.0\.1|\[::1\]|192\.168\.\d+\.\d+|10\.\d+\.\d+\.\d+)$/.test(location.hostname);
   Promise.all([
     fetch(S.base + "/catalog.json?v=" + Math.floor(Date.now() / 60000)).then(function (r) { return r.json(); }),
     local ? Promise.resolve({ api: "" }) : fetch(S.base + "/api.json?t=" + Date.now()).then(function (r) { return r.json(); }).catch(function () { return { api: null }; })
