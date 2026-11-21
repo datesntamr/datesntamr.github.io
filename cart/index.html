@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سلة التسوق | Dates&#39;n تمر</title>
+
+<meta name="theme-color" content="#3b2314">
+<link rel="stylesheet" href="/assets/site.9fd58f8e.css">
+<link rel="icon" href="/img/logo-64.png">
+<link rel="alternate" hreflang="en" href="https://tamrndates.github.io/en/cart/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="سلة التسوق | Dates&#39;n تمر">
+
+
+<meta property="og:url" content="https://tamrndates.github.io/cart/">
+<script>window.SITE={base:"",lang:"ar",cart:"\/cart\/"}</script>
+<script src="/assets/site.9e8c5abd.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/">
+      <img src="/img/logo-64.png" width="44" height="44" alt="">
+      <span>Dates&#39;n تمر</span>
+    </a>
+    <nav class="nav">
+      <a href="/#shop">المتجر</a>
+      <a href="/#about">من نحن</a>
+      <a href="/#contact">تواصل معنا</a>
+    </nav>
+    <a class="lang" href="/en/cart/" hreflang="en">English</a>
+    <a class="cart-btn" href="/cart/" aria-label="سلة التسوق">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.4 2H21l-2 8H7.4l-.3 1.5H19v2H4.6l1.1-4.6L3.4 2H1V0h3.9l.3 2"/></svg>
+      <b class="cart-count" hidden>0</b>
+    </a>
+  </div>
+</header>
+<main>
+
+<div class="wrap section cart-page">
+  <h1>سلة التسوق</h1>
+  <div id="cartApp" class="checkout">
+    <div class="col">
+      <div id="cartItems" class="cart-items"><p class="muted">…</p></div>
+    </div>
+    <form id="checkout" class="col panel" novalidate hidden>
+      <h2>التوصيل</h2>
+      <label>الاسم *<input name="name" autocomplete="name" maxlength="100" required></label>
+      <label>رقم الموبايل *<input name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" maxlength="20" placeholder="01xxxxxxxxx" required></label>
+      <label>البريد الإلكتروني <small class="muted">(اختياري)</small><input name="email" type="email" autocomplete="email" dir="ltr" maxlength="120"></label>
+      <label>منطقة التوصيل *
+        <select name="area" required id="areaSel"></select>
+      </label>
+      <label>العنوان بالتفصيل (الحي، الشارع، العمارة، الدور، الشقة) *<textarea name="address" rows="2" maxlength="300" autocomplete="street-address" required></textarea></label>
+      <label>ملاحظات على الطلب<textarea name="notes" rows="2" maxlength="500" placeholder="أي طلبات خاصة؟"></textarea></label>
+      <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="pay"><input type="radio" checked disabled> الدفع عند الاستلام</div>
+      <p class="muted small">🚚 خلال 1 - 4 أيام عمل</p>
+      <dl class="totals">
+        <dt data-t="subtotal"></dt><dd id="tSub"></dd>
+        <dt data-t="delivery"></dt><dd id="tDel"></dd>
+        <dt class="grand" data-t="total"></dt><dd class="grand" id="tTot"></dd>
+      </dl>
+      <p class="err" id="formErr" hidden></p>
+      <div class="offline" id="offline" hidden></div>
+      <button class="btn big full" type="submit" id="placeBtn"></button>
+    </form>
+  </div>
+  <div id="done" class="panel done" hidden></div>
+</div>
+<script type="application/json" id="i18n">{"back":"العودة للمتجر","cart_empty":"سلتك فارغة","choose_area":"اختر المنطقة","continue":"متابعة التسوق","delivery":"التوصيل","err_address":"من فضلك اكتب العنوان بالتفصيل","err_area":"من فضلك اختر منطقة التوصيل","err_email":"البريد الإلكتروني غير صحيح","err_generic":"حدث خطأ، حاول مرة أخرى","err_name":"من فضلك اكتب الاسم","err_phone":"رقم الموبايل غير صحيح (مثال: 01012345678)","items":"المنتجات","min_order":"الحد الأدنى للطلب","offline":"نظام الطلبات غير متاح الآن. يمكنك إرسال طلبك مباشرة عبر واتساب.","order_no":"رقم الطلب","order_ok":"تم استلام طلبك بنجاح! سنتواصل معك قريبًا لتأكيد موعد التوصيل.","place_order":"تأكيد الطلب","placing":"جارٍ إرسال الطلب…","remove":"حذف","subtotal":"المجموع الفرعي","total":"الإجمالي","unavailable":"غير متوفر","wa_confirm":"أرسل الطلب على واتساب أيضًا","wa_order":"أرسل الطلب عبر واتساب"}</script>
+
+</main>
+<footer class="foot" id="contact">
+  <div class="wrap foot-in">
+    <div>
+      <strong>Dates&#39;n تمر</strong>
+      <p>من النخلة ليدك مباشرة 🌴</p>
+    </div>
+    <div class="contact-links">
+      <a class="btn wa" href="https://wa.me/201013577532" target="_blank" rel="noopener">واتساب</a>
+      <a class="btn fb" href="https://facebook.com/Tamrndates" target="_blank" rel="noopener">فيسبوك</a>
+      <a class="btn ghost" href="tel:01013577532" dir="ltr">01013577532</a>
+    </div>
+    <div class="foot-meta">
+      <a href="/policy/">الشحن والدفع</a>
+      <span>© 2026 Dates&#39;n تمر. جميع الحقوق محفوظة</span>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" hidden></div>
+</body>
+</html>

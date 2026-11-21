@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart | Dates&#39;n Tamr</title>
+
+<meta name="theme-color" content="#3b2314">
+<link rel="stylesheet" href="/assets/site.9fd58f8e.css">
+<link rel="icon" href="/img/logo-64.png">
+<link rel="alternate" hreflang="ar" href="https://tamrndates.github.io/cart/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cart | Dates&#39;n Tamr">
+
+
+<meta property="og:url" content="https://tamrndates.github.io/en/cart/">
+<script>window.SITE={base:"",lang:"en",cart:"\/en\/cart\/"}</script>
+<script src="/assets/site.9e8c5abd.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/en/">
+      <img src="/img/logo-64.png" width="44" height="44" alt="">
+      <span>Dates&#39;n Tamr</span>
+    </a>
+    <nav class="nav">
+      <a href="/en/#shop">Shop</a>
+      <a href="/en/#about">About</a>
+      <a href="/en/#contact">Contact</a>
+    </nav>
+    <a class="lang" href="/cart/" hreflang="ar">العربية</a>
+    <a class="cart-btn" href="/en/cart/" aria-label="Cart">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM5.2 4l.4 2H21l-2 8H7.4l-.3 1.5H19v2H4.6l1.1-4.6L3.4 2H1V0h3.9l.3 2"/></svg>
+      <b class="cart-count" hidden>0</b>
+    </a>
+  </div>
+</header>
+<main>
+
+<div class="wrap section cart-page">
+  <h1>Cart</h1>
+  <div id="cartApp" class="checkout">
+    <div class="col">
+      <div id="cartItems" class="cart-items"><p class="muted">…</p></div>
+    </div>
+    <form id="checkout" class="col panel" novalidate hidden>
+      <h2>Delivery</h2>
+      <label>Full name *<input name="name" autocomplete="name" maxlength="100" required></label>
+      <label>Mobile number *<input name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" maxlength="20" placeholder="01xxxxxxxxx" required></label>
+      <label>Email <small class="muted">(optional)</small><input name="email" type="email" autocomplete="email" dir="ltr" maxlength="120"></label>
+      <label>Delivery area *
+        <select name="area" required id="areaSel"></select>
+      </label>
+      <label>Full address (district, street, building, floor, apartment) *<textarea name="address" rows="2" maxlength="300" autocomplete="street-address" required></textarea></label>
+      <label>Order notes<textarea name="notes" rows="2" maxlength="500" placeholder="Any special requests?"></textarea></label>
+      <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="pay"><input type="radio" checked disabled> Cash on delivery</div>
+      <p class="muted small">🚚 Within 1 - 4 working days</p>
+      <dl class="totals">
+        <dt data-t="subtotal"></dt><dd id="tSub"></dd>
+        <dt data-t="delivery"></dt><dd id="tDel"></dd>
+        <dt class="grand" data-t="total"></dt><dd class="grand" id="tTot"></dd>
+      </dl>
+      <p class="err" id="formErr" hidden></p>
+      <div class="offline" id="offline" hidden></div>
+      <button class="btn big full" type="submit" id="placeBtn"></button>
+    </form>
+  </div>
+  <div id="done" class="panel done" hidden></div>
+</div>
+<script type="application/json" id="i18n">{"back":"Back to shop","cart_empty":"Your cart is empty","choose_area":"Choose area","continue":"Continue shopping","delivery":"Delivery","err_address":"Please enter your full address","err_area":"Please choose a delivery area","err_email":"Invalid email address","err_generic":"Something went wrong, please try again","err_name":"Please enter your name","err_phone":"Invalid mobile number (e.g. 01012345678)","items":"Items","min_order":"Minimum order","offline":"Online ordering is unavailable right now. You can send your order directly on WhatsApp.","order_no":"Order number","order_ok":"Your order has been received! We will contact you soon to confirm delivery.","place_order":"Place order","placing":"Placing your order…","remove":"Remove","subtotal":"Subtotal","total":"Total","unavailable":"Unavailable","wa_confirm":"Also send it on WhatsApp","wa_order":"Send order via WhatsApp"}</script>
+
+</main>
+<footer class="foot" id="contact">
+  <div class="wrap foot-in">
+    <div>
+      <strong>Dates&#39;n Tamr</strong>
+      <p>From the palm tree straight to your hands 🌴</p>
+    </div>
+    <div class="contact-links">
+      <a class="btn wa" href="https://wa.me/201013577532" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn fb" href="https://facebook.com/Tamrndates" target="_blank" rel="noopener">Facebook</a>
+      <a class="btn ghost" href="tel:01013577532" dir="ltr">01013577532</a>
+    </div>
+    <div class="foot-meta">
+      <a href="/en/policy/">Shipping &amp; payment</a>
+      <span>© 2026 Dates&#39;n Tamr. All rights reserved</span>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" hidden></div>
+</body>
+</html>
